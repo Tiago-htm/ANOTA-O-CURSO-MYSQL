@@ -23,7 +23,29 @@ precisamos de um pegador que é o SGBD. Os principais elementos de um Banco de D
 	* INSERT INTO <Tabela> (nome da coluna, ...) VALUES ("valores", 21312);
 	* ALTER TABLE <tabela> ADD COLUMN <nome> <tipo>: adicionar uma coluna nova na tabela;
 	* ALTER TABLE <tabela> MODIFY COLUMN <coluna> <tipo>: Modificar uma coluna;
-	*
+	* ALTER TABLE <tabela> DROP COLUMN <nome> : Deleta uma coluna;
+	* UPDATE <tabela> SET <coluna = valor>;
+	* SELECT DISTINCT <coluna> FROM <tabela> : vai voltar apenas valores diferentes da coluna selecionada;
+	* ORDER <coluna> BY (DESC OU ASC) : order a qual os itens vão ser exibido, é o ultimo comando a ser exibido;
+	* SELECT <coluna> FROM tabela ORDER BY <coluna>  LIMIT (numero) : Para limitar o numero de resultados;
+	* SELECT MIN (<coluna>) FROM <tabela> : para exibir o menor valor;
+	* SELECT MAX (<coluna>) FROM <tabela> : para exibir o maior valor;
+	* SELECT COUNT(*) FROM table : para contar o tanto de valores que existe na coluna;
+	* SELECT AVG(coluna) FROM table : para tirar a media de uma coluna;
+	* SELECT SUM (coluna) FROM table : para somar os valore de uma coluna;
+	
+**OBS: PARA UTILIZAR DELETE E UPDATE SEMPRE BOM ULTIZAR O SELECT ANTES PARA CONFIRMAR SE É ISSO MESMO QUE QUER FAZER!**
+
+### UTILIZANDO WHERE: 
+		
+	O where é fundamental para especificar nossas ações no banco, desse modo evitando fazer algo indesejavel ...
+###### Utilizando o WHERE:
+		
+	*UPDATE tabela SET <coluna = valor,...etc> WHERE <condiçao>;
+	*DELETE FROM <tabela> WHERE <condição>;
+	*SELECT <coluna>  FROM <tabela>  WHERE <condição>;
+	
+	
 
 	
 
