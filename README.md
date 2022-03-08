@@ -89,6 +89,16 @@ precisamos de um pegador que é o SGBD. Os principais elementos de um Banco de D
 	* FOREIGN KEY : para fazer ligação com outra tabela
 	* INDEX : faz a busca ser mais rapida
 	
+	##PROCEDURES
+	DELIMITER //
+	CREATE PROCEDURE fullName()
+	BEGIN 
+		SELECT CONCAT(first_name, " ", last_name) AS full_name FROM employewes;
+	END//
+	
+	SHOW PROCEDURE STATUS = Mostrar todas as procedures
+	
+	SHOW CREATE PROCEDURE <nome da procedure> = Mostra oque ela faz
 	
 ##CONCLUSÃO:
 	Este arquivo foi feio para futuras consultas e também para ajudar a memorização;
